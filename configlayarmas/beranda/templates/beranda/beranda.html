@@ -1,13 +1,22 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block contents %}
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/carausel.png' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
 
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-           <h1>Layanan</h1> 
+           <h3 class="text-center bold py-3">Cara Proses menggunakan Layanan layarmas</h3> 
+
         </div>
     </div>
 </div>
-  
+
 {% endblock contents %}

@@ -12,24 +12,52 @@
   <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="200">
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Layarmas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Tentang Layarmas</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Link Terkait 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dinas Perikanan</a></li>
+            <li><a class="dropdown-item" href="#">Pemkab Deli Serdang</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+          </ul>
+        </li>
+      </ul>
+        <button class="btn btn-danger" type="submit">Login</button>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </div>
+  </div>
+</nav>
 
 {% block contents %}{% endblock contents %}
   <!-- FOOTER -->
-  <footer id="main-footer" class="text-white text-center bg-dark py-5" data-aos="fade-up">
+  <footer id="main-footer" class="text-white text-center bg-success py-5" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="text-md-start col-md-4 me-auto">
-          <h5>ILKOOM</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aperiam cumque, esse modi maxime veniam nulla delectus dolorem
+          <h5>Layarmas</h5>
+          <p>
+           Layanan Perikanan Deli Serdang Maju Bersama
           </p>
-          <small>&copy; ILKOOM 2021</small>
+          <small>&copy; layarmas 2021</small>
         </div>
         <div class="text-md-start col-md-4 mt-4 mt-md-0">
           <h5>Hubungi Kami</h5>
-          <div><i class="bi-envelope fs-5 me-3"></i>andre@ilkoom.com</div>
+          <div><i class="bi-envelope fs-5 me-3"></i>layarmas@deliserdangkab.go.id</div>
           <div><i class="bi-phone fs-5 me-3"></i>(021) 123456</div>
-          <div><i class="bi-globe fs-5 me-3"></i>www.ilkoom.com</div>
+          <div><i class="bi-globe fs-5 me-3"></i>www.layarmas.deliserdangkab.go.id</div>
           <div class="pt-3">
             <a href="#" class="text-white text-decoration-none me-2">
               <i class="bi-facebook fs-5"></i>

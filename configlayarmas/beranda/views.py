@@ -4,6 +4,6 @@ from django.shortcuts import render
 
 def beranda(request):
     context = {
-        'title':'Beranda'
+        'title':'Beranda | Layarmas'
     }
     return render(request,'beranda/beranda.html',context)
